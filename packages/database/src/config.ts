@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import {config} from 'dotenv';;
 import {DataSourceOptions} from 'typeorm'
 import path from 'path';
+import { DataSource } from 'typeorm/browser';
 
 config({path: path.resolve(__dirname, '../../../.env')});
 export const dataSourceOptions : DataSourceOptions =  {
@@ -16,3 +17,5 @@ export const dataSourceOptions : DataSourceOptions =  {
     synchronize: false,
     logging: process.env.NODE_ENV !== 'production',
 };
+
+export const AppDataSource = new DataSource(dataSourceOptions);
