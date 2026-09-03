@@ -9,13 +9,15 @@ import { AppController } from './app.controller.js';
 import { AppService } from './app.service.js';
 import { ConfigModule } from '@nestjs/config';
 import { DatabaseModule } from './database/database.module.js';
+import { ChatModule } from './chat/chat.module.js';
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     Module({
         imports: [
             ConfigModule.forRoot({ isGlobal: true }),
-            DatabaseModule
+            DatabaseModule,
+            ChatModule
         ],
         controllers: [AppController],
         providers: [AppService],

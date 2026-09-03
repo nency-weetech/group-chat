@@ -15,3 +15,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./config"), exports);
+__exportStar(require("./entities/users.entity"), exports);
+__exportStar(require("./entities/message.entity"), exports);
+__exportStar(require("./entities/room.entity"), exports);
+__exportStar(require("./entities/roomMember.entity"), exports);

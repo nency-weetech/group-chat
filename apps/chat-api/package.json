@@ -20,10 +20,10 @@
     "test:cov": "vitest run --coverage",
     "test:debug": "vitest --inspect-brk --no-file-parallelism",
     "test:e2e": "vitest run --config ./vitest.config.e2e.ts",
-     "typeorm": "typeorm-ts-node-commonjs -d ../../packages/database/src/data-source.ts"
+    "typeorm": "typeorm-ts-node-commonjs -d ../../packages/database/src/data-source.ts"
   },
   "dependencies": {
-    "@group-chat/database" : "1.0.0",
+    "@group-chat/database": "1.0.0",
     "@nestjs/common": "^12.0.1",
     "@nestjs/config": "12.0.0",
     "@nestjs/core": "^12.0.1",
@@ -31,11 +31,13 @@
     "@nestjs/platform-socket.io": "12.0.1",
     "@nestjs/typeorm": "12.0.1",
     "@nestjs/websockets": "12.0.1",
+    "nest-winston": "1.10.2",
     "pg": "8.23.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "socket.io": "4.8.3",
-    "typeorm": "1.1.1"
+    "typeorm": "1.1.1",
+    "winston": "3.19.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^12.0.0",
